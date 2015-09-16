@@ -6,7 +6,7 @@ var plugins = [
   new webpack.optimize.OccurenceOrderPlugin(),
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-  })
+    })
 ];
 
 if (process.env.NODE_ENV === 'production') {
@@ -26,7 +26,7 @@ module.exports = {
       test: /\.js$/,
       loaders: ['babel-loader'],
       exclude: /node_modules/
-    }]
+  }]
   },
   output: {
     library: 'library-boilerplate',
